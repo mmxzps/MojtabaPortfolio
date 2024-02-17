@@ -1,0 +1,503 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cute Font', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  background-image: url("pictures/strek.png");
+  background-size: cover;
+  background-color: rgb(39, 38, 38);
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header a {
+  color: black;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  height: 11vh;
+}
+
+
+.profilepic {
+  padding-top: 12rem;
+  width: 15vh;
+  height: 12vh;
+  border-radius: 0%;
+}
+
+.hemlogo {
+  padding-top: 12rem;
+  width: 15vh;
+  height: 12vh;
+  border-radius: 0%;
+}
+
+main {
+  text-align: center;
+  display: -webkit-inline-box;
+  width: 100%;
+}
+
+aside {
+  width: 30%;
+  height: 100vh;
+}
+
+footer {
+  text-align: center;
+  min-height: 5vh;
+}
+
+li {
+  padding: 5%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 17%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(11, 14, 48);
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(240, 240, 231);
+  position: relative;
+}
+
+h3 {
+  padding-bottom: 1rem;
+  color: rgb(212, 212, 212);
+}
+
+nav ul li a:hover {
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+.logo {
+  padding-left: 3%;
+  padding-bottom: 3rem;
+  width: 4vh;
+  height: 4vh;
+}
+
+.logo:hover{
+  transform: scale(1.2);
+}
+
+h2 {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.kortinfo {
+  max-width: 45%;
+  display: block;
+  padding: 5rem;
+  margin: 2rem;
+  text-align: center;
+  color: white;
+  padding-top: 0rem;
+}
+
+.aboutmeinfo {
+  max-width: 45%;
+  display:flow-root;
+  padding: 5rem;
+  margin: 2rem;
+  text-align: center;
+  color: white;
+  padding-top: 9rem;
+}
+
+.container {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+}
+
+.box2 {
+  margin-left: 1rem;
+  height: 100%;
+  width: 50%;
+}
+
+.box1 {
+  margin-right: 1rem;
+  height: 100%;
+  width: 50%;
+}
+
+.box2,
+.box1 {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 50%;
+}
+
+.apipic,
+.bankpic {
+  margin-right: 1rem;
+  height: 250px;
+  width: 250px;
+  border-radius: 5%;
+}
+
+.apipic:hover,
+.bankpic:hover {
+  transform: scale(1.1);
+}
+/* ---POP UP MODAL ------------------------------------------ */
+
+.popup{
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0,0,0,0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-inner{
+  background-color: rgba(12, 11, 11);
+  padding: 32px 16px;
+  width: 40%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  max-width: 768;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgb(20, 20, 20);
+}
+.pop-inner p{
+  font-size: medium;
+  color: yellow;
+  font-weight: lighter;
+}
+.popup:target{
+  opacity: 1;
+  pointer-events: all;
+}
+.pbutton{
+  margin-top: 10px;
+  padding: 7px 12px;
+  background-color: rgba(21, 27, 88, 0.596);
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 1rem;
+}
+.pbutton:hover{
+  transform: scale(1.2);
+}
+@media screen and (max-width: 1111px) {
+  .hemlogo{
+    padding-top: 1rem;
+    width: 10vh;
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 12rem;
+    left: -2rem;
+    margin-bottom: 2rem;
+  }
+  .kortinfo h2{
+    display: inline-block;
+    margin-top: 4rem;
+  }
+  .kortinfo-p{
+    display: none;
+  }
+  .kortinfo{
+    padding-top: 20rem;
+  }
+  #mojtaba{
+    display: none;
+  }
+  .hemlogo{
+    padding-top: 1rem;
+    width: 7vh;
+    height: 7vh;
+  }
+  .knappen1, .knappen2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.bilden1, .bilden2{
+  display: block;
+  width: 30rem;
+  margin-bottom: 11rem;
+}
+.bankpic, .apipic{
+  height: 20vh;
+  width: 20vh;
+  border-radius: 5%;
+}
+.box1, .box2{
+  margin-bottom: 4rem;
+}
+nav ul{
+  width: 9rem;
+}
+footer{
+  position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    z-index: -1;
+    display: inline-block;
+}
+.popup{
+  bottom: 40rem;
+  top:40%;
+}
+.pop-inner{
+  font-size:medium;
+  padding-top: 0;
+  padding-bottom: 5rem;
+  height: 17vh;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  .aboutmeinfo {
+    max-width: 45%;
+    display:flow-root;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+    font-size: x-small;
+  }
+  
+}
+
+/*-------------------------------Education TIMELINE*/
+.edutimeline {
+  position: relative;
+  max-width: 80%;
+  margin-top: 10rem;
+}
+
+/*hållaren av text-box och reseten*/
+.educontainer {
+  padding: 2% 15%;
+  position: relative;
+  width: 100%;
+  animation: movedown 6s linear forwards;
+  opacity: 0;
+  z-index: 2;
+}
+/*animeringen på hur boxen visas*/
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*lagt en delay så att varje box visas efter linjeAnimation*/
+.educontainer:nth-child(2){
+  animation-delay: 1s;
+}
+.educontainer:nth-child(3){
+  animation-delay: 2s;
+}
+.educontainer:nth-child(4){
+  animation-delay: 3s;
+}
+.educontainer:nth-child(5){
+  animation-delay: 4s;
+}
+.educontainer:nth-child(6){
+  animation-delay: 5s;
+}
+/*designen av boxen som är under texten*/
+.text-box {
+  padding: 1% 1%;
+  background: rgb(212 212 212 / 24%);
+  position: relative;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 16rem;
+  left:-2%;
+}
+
+/*placeringen av vänster boxen*/
+.left-container {
+  left: 4%;
+}
+
+/*placeringen av höger boxen*/
+.right-container {
+  left: 130.2%;
+}
+
+/*placeringen+justering av bilden för vänster-boxen*/
+.educontainer .edupic {
+  position: absolute;
+  width: 5vh;
+  border-radius: 5rem;
+  right: -20px;
+  top: 22%;
+  z-index: 10;
+}
+
+/*placeringen av bilden för höger-boxen*/
+.right-container .edupic {
+  left: -1.5rem;
+}
+
+/*timeline linjen*/
+.edutimeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #525151a6;
+  top: 0;
+  left: 132.2%;
+  margin-left: -3px;
+  z-index: 1;
+  animation: moveline 6s linear forwards;
+}
+/*animeringen på hur linjen visas*/
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+/*rubriken i boxen*/
+.text-box h2 {
+  font-weight: 600;
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/*"pilen" som sticker ut från boxen*/
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #525151a6;
+  right: -15px;
+}
+
+/*"pilen" som sticker ut från boxen*/
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #525151a6;
+  left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .edutimeline{
+    margin: 50px auto;
+    left: 20%; /*hhhhhhhhhhhhhhhh'är är ändring nr1    */
+  }
+  .edutimeline::after{
+    left: 31px;
+  }
+  .educontainer{
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+  .educontainer .edupic{ /*hhhhhhhhhhhhhhhh'är är ändring nr1    */
+    top: 33%;
+  }
+  .text-box{
+    font-size: 13px;
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 13rem; /*hhhhhhhhhhhhhhhh'är är ändring nr1    */
+  }
+  .text-box small{
+    margin-bottom: 10px;
+  }
+  .right-container{
+    left:-2%;
+  }
+  .left-container .edupic, .right-container .edupic{
+    left: 10px;
+  }
+  .left-container-arrow, .right-container-arrow{
+    border-right: 15px solid #525151a6;
+    border-left: 0;
+    left: -15px;
+  }
+  .left-container{
+    left:-2%;
+  }
+}
