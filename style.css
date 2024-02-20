@@ -288,248 +288,6 @@ a {
 .pbutton:hover{
   transform: scale(1.2);
 }
-@media screen and (max-width: 1111px) {
-  .hemlogo{
-    width: 5vh;
-    height: auto;
-    position: relative;
-    left: 10rem;
-    top: 8rem;
-  }
-  .kortinfo h2{
-    display: block;
-    margin-top: 4rem;
-    font-size: 1.3rem;
-    min-width: 15rem;
-    position: relative;
-    top: 9rem;
-    color:white;
-  }
-  .kortinfo p{
-    display: block;
-    font-size: 1.3rem;
-    position: relative;
-    top: 6rem;
-    left: 3rem;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .container{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    height: 12rem;
-    left: -2rem;
-    margin-bottom: 2rem;
-  }
-
-  .i-kortinfo h2{
-    display: block;
-    font-size: 1.3rem;
-    min-width: 15rem;
-    position: relative;
-    top: 0rem;
-    left: 1rem;
-    color:white;
-  }
-  .i-hemlogo {
-    width: 10vh;
-    height: auto;
-    position: relative;
-    top:-4rem;
-    left:10rem;
-  }
-  .i-kortinfo p{
-    display: block;
-    font-size: 1.3rem;
-    position: relative;
-    top: -5rem;
-    left: 0rem;
-    color:white;
-  }
-  .i-kortinfo #mojtaba{
-    display: block;
-  }
-  
-  .kortinfo h2{
-    display: block;
-    margin-top: 4rem;
-    font-size: 1.3rem;
-    min-width: 15rem;
-    position: relative;
-    top: 9rem;
-  }
-  #mojtaba{
-    display: none;
-  }
-  .hemlogo{
-    width: 5vh;
-    height: auto;
-    position: relative;
-    left: 12rem;
-    top: 9rem;
-  }
-
-  .knappen1, .knappen2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-.bilden1, .bilden2{
-  display: block;
-  max-width: 30rem;
-  margin-bottom: 11rem;
-}
-.bankpic, .apipic{
-  height: 20vh;
-  width: 20vh;
-  border-radius: 5%;
-}
-.box1, .box2{
-  margin-bottom: 4rem;
-}
-nav ul{
-  width: 9rem;
-}
-footer{
-  position: fixed;
-    bottom: 1rem;
-    left: 50%;
-    z-index: -1;
-    display: inline-block;
-}
-.popup{
-  bottom: 40rem;
-  top:40%;
-}
-.pop-inner{
-  font-size:medium;
-  padding-top: 0;
-  padding-bottom: 5rem;
-  height: 17vh;
-}
-
-}
-
-@media screen and (max-width: 600px) {
-  .aboutmeinfo {
-    max-width: 45%;
-    display:flow-root;
-    padding: 1rem;
-    margin: 2rem;
-    text-align: center;
-    color: white;
-    padding-top: 3rem;
-    font-size: x-small;
-    line-height: 1.2rem;
-  }
-
-  .aboutmeinfo p, h3{
-    text-align: center;
-    position: relative;
-    left: 0rem;
-    overflow: scroll;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    height: 15rem;
-    left: 0rem;
-    margin-bottom: 2rem;
-    width: 1rem;
-    height: 10rem;
-  }
-  .kortinfo{
-    display: inline-block;
-    height: auto;
-    width: auto;
-    font-size:x-small;
-    margin: 1rem 0 ;
-  }
-  .kortinfo h2{
-    display: block;
-    font-size: 0.7rem;
-    min-width: 8rem;
-    position: relative;
-    top: 8rem;
-    left: 0;
-  }
-  
-  .hemlogo{
-    width: 4vh;
-    height: auto;
-    position: relative;
-    left: 5.5rem;
-    top: 7.5rem;
-  }
-  .kortinfo p{
-    display: none;
-  }
-  .myprojects{
-    width: 65%;
-    height: 100%;
-    display: inline-block;
-  }
-  .bankpic, .apipic {
-    width: 15vh;
-    height: 15vh;
-    position: absolute;
-    left: 2rem;
-  }
-  .pbutton{
-    margin-left: 10rem;
-    font-size: 0.6rem;
-  }
-  .knappen1, .knappen2{
-    position: absolute;
-    left: -6rem;
-    padding-top: 8rem;
-  }
-  .popup .pbutton{
-    margin-left: 0;
-  }
-  .pop-inner{
-    padding-bottom: 2rem;
-    padding-top:1rem;
-    align-content: center;
-    height: fit-content;
-  }
-  .pop-inner h2{
-    color: white;
-  }
-
-  .i-kortinfo h2{
-    display: block;
-    font-size: 0.6rem;
-    min-width: 13rem;
-    position: relative;
-    top: 10rem;
-    left: 1rem;
-    color:white;
-  }
-  .i-hemlogo {
-    width: 7vh;
-    height: auto;
-    position: relative;
-    top:4rem;
-    left:4rem;
-  }
-  .i-kortinfo p{
-    display: block;
-    font-size: 0.7rem;
-    position: relative;
-    top: 7rem;
-    left: 4rem;
-    color:white;
-  }
-
-  .nameintro{
-    position: relative;
-    width: 50%;
-  }
-}
 
 /*-------------------------------Education TIMELINE*/
 .edutimeline {
@@ -671,36 +429,320 @@ footer{
   left: -15px;
 }
 
+@media screen and (max-width: 1111px) {
+  .hemlogo{
+    width: 5vh;
+    height: auto;
+    position: relative;
+    left: 10rem;
+    top: 8rem;
+  }
+  .kortinfo h2{
+    display: block;
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    min-width: 15rem;
+    position: relative;
+    top: 9rem;
+    color:white;
+  }
+  .kortinfo p{
+    display: block;
+    font-size: 1.3rem;
+    position: relative;
+    top: 6rem;
+    left: 3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 12rem;
+    left: -2rem;
+    margin-bottom: 2rem;
+  }
+
+  .i-kortinfo h2{
+    display: block;
+    font-size: 1.3rem;
+    min-width: 15rem;
+    position: relative;
+    top: 0rem;
+    left: 1rem;
+    color:white;
+  }
+  .i-hemlogo {
+    width: 10vh;
+    height: auto;
+    position: relative;
+    top:-4rem;
+    left:10rem;
+  }
+  .i-kortinfo p{
+    display: block;
+    font-size: 1.3rem;
+    position: relative;
+    top: -5rem;
+    left: 0rem;
+    color:white;
+  }
+  .i-kortinfo #mojtaba{
+    display: block;
+  }
+  
+  .kortinfo h2{
+    display: block;
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    min-width: 15rem;
+    position: relative;
+    top: 9rem;
+  }
+  #mojtaba{
+    display: none;
+  }
+  .hemlogo{
+    width: 5vh;
+    height: auto;
+    position: relative;
+    left: 12rem;
+    top: 9rem;
+  }
+
+  .knappen1, .knappen2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.bilden1, .bilden2{
+  display: block;
+  max-width: 30rem;
+  margin-bottom: 11rem;
+}
+.bankpic, .apipic{
+  height: 20vh;
+  width: 20vh;
+  border-radius: 5%;
+}
+.box1, .box2{
+  margin-bottom: 4rem;
+}
+nav ul{
+  width: 9rem;
+}
+footer{
+  position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    z-index: -1;
+    display: inline-block;
+}
+.popup{
+  bottom: 40rem;
+  top:40%;
+}
+.pop-inner{
+  font-size:medium;
+  padding-top: 0;
+  padding-bottom: 5rem;
+  height: 17vh;
+}
+/*EduTime line---------------------------1000px--media-query-------*/
+.text-box{
+  font-size: 0.6rem;
+  width: 10rem;
+  left:-86%
+}
+.text-box h2{
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+.edutimeline{
+  max-width: 70%;
+  margin-top:9rem;
+  left:-4rem;
+}
+.left-container{
+  left:46%;
+}
+.educontainer .edupic{
+  right:-30%
+}
+.left-container-arrow {
+  top:15px;
+}
+.right-container-arrow {
+  top: 16px;
+}
+.right-container .edupic {
+  left: -64%;
+}
+.educontainer {
+  width: 46%;
+}
+.right-container {
+  left: 166.2%;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  .aboutmeinfo {
+    max-width: 45%;
+    display:flow-root;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+    font-size: x-small;
+    line-height: 1.2rem;
+  }
+
+  .aboutmeinfo p, h3{
+    text-align: center;
+    position: relative;
+    left: 0rem;
+    overflow: scroll;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 15rem;
+    left: 0rem;
+    margin-bottom: 2rem;
+    width: 1rem;
+    height: 10rem;
+  }
+  .kortinfo{
+    display: inline-block;
+    height: auto;
+    width: auto;
+    font-size:x-small;
+    margin: 1rem 0 ;
+  }
+  .kortinfo h2{
+    display: block;
+    font-size: 0.7rem;
+    min-width: 8rem;
+    position: relative;
+    top: 8rem;
+    left: 0;
+  }
+  
+  .hemlogo{
+    width: 4vh;
+    height: auto;
+    position: relative;
+    left: 5.5rem;
+    top: 7.5rem;
+  }
+  .kortinfo p{
+    display: none;
+  }
+  .myprojects{
+    width: 65%;
+    height: 100%;
+    display: inline-block;
+  }
+  .bankpic, .apipic {
+    width: 15vh;
+    height: 15vh;
+    position: absolute;
+    left: 2rem;
+  }
+  .pbutton{
+    margin-left: 10rem;
+    font-size: 0.6rem;
+  }
+  .knappen1, .knappen2{
+    position: absolute;
+    left: -6rem;
+    padding-top: 8rem;
+  }
+  .popup .pbutton{
+    margin-left: 0;
+  }
+  .pop-inner{
+    padding-bottom: 2rem;
+    padding-top:1rem;
+    align-content: center;
+    height: fit-content;
+  }
+  .pop-inner h2{
+    color: white;
+  }
+
+  .i-kortinfo h2{
+    display: block;
+    font-size: 0.6rem;
+    min-width: 13rem;
+    position: relative;
+    top: 10rem;
+    left: 1rem;
+    color:white;
+  }
+  .i-hemlogo {
+    width: 7vh;
+    height: auto;
+    position: relative;
+    top:4rem;
+    left:4rem;
+  }
+  .i-kortinfo p{
+    display: block;
+    font-size: 0.7rem;
+    position: relative;
+    top: 7rem;
+    left: 4rem;
+    color:white;
+  }
+
+  .nameintro{
+    position: relative;
+    width: 50%;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
   .edutimeline{
     margin: 50px auto;
-    left: 20%; /*hhhhhhhhhhhhhhhh'är är ändring nr1    */
+    left: -19%; 
+    max-width: 5%;;
   }
   .edutimeline::after{
     left: 31px;
   }
   .educontainer{
-    width: 100%;
-    padding-left: 4rem;
-    padding-right: 2rem;
+    width: 6%;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
-  .educontainer .edupic{ /*hhhhhhhhhhhhhhhh'är är ändring nr1    */
-    top: 33%;
+  .educontainer .edupic{ 
+    top: 43%;
+    width: 4vh;
   }
   .text-box{
-    font-size: 13px;
+    font-size: 9px;
     padding-left: 1px;
     padding-right: 1px;
-    width: 13rem; /*hhhhhhhhhhhhhhhh'är är ändring nr1    */
+    width: 5rem; 
+    left:254%;
+    margin-top: 1.5rem;
   }
   .text-box small{
     margin-bottom: 10px;
   }
   .right-container{
-    left:-2%;
+    left:221%;
   }
   .left-container .edupic, .right-container .edupic{
-    left: 10px;
+    left: -31px;
   }
   .left-container-arrow, .right-container-arrow{
     border-right: 15px solid #525151a6;
@@ -708,6 +750,10 @@ footer{
     left: -15px;
   }
   .left-container{
-    left:-2%;
+    left:219%;
   }
+  .left-container-arrow,  .right-container-arrow {
+    display: none;
+  }
+
 }
