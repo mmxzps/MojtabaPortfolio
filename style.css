@@ -39,6 +39,42 @@ header {
   width: 15vh;
   height: auto;
 }
+.-kortinfo {
+  max-width: 45%;
+  display: block;
+  padding: 1rem;
+  margin: 2rem;
+  text-align: center;
+  color: white;
+  padding-top: 0rem;
+}
+.i-hemlogo {
+  width: 10vh;
+  height: auto;
+  position: relative;
+  top:-4rem;
+  left:15rem;
+}
+.i-kortinfo h2{
+  display: block;
+  font-size: 1.3rem;
+  min-width: 15rem;
+  position: relative;
+  top: 0rem;
+  left: 5rem;
+  color:white;
+}
+.i-kortinfo p{
+  display: block;
+  font-size: 1.3rem;
+  position: relative;
+  top: -5rem;
+  left: 3rem;
+  color:white;
+}
+.nameintro{
+  padding-top: 90%;
+}
 
 .hemlogo {
   width: 10vh;
@@ -62,9 +98,6 @@ header {
   position: relative;
   top: 4rem;
   left: 3rem;
-}
-.nameintro{
-  padding-top: 90%;
 }
 
 main {
@@ -270,6 +303,7 @@ a {
     min-width: 15rem;
     position: relative;
     top: 9rem;
+    color:white;
   }
   .kortinfo p{
     display: block;
@@ -289,6 +323,35 @@ a {
     left: -2rem;
     margin-bottom: 2rem;
   }
+
+  .i-kortinfo h2{
+    display: block;
+    font-size: 1.3rem;
+    min-width: 15rem;
+    position: relative;
+    top: 0rem;
+    left: 1rem;
+    color:white;
+  }
+  .i-hemlogo {
+    width: 10vh;
+    height: auto;
+    position: relative;
+    top:-4rem;
+    left:10rem;
+  }
+  .i-kortinfo p{
+    display: block;
+    font-size: 1.3rem;
+    position: relative;
+    top: -5rem;
+    left: 0rem;
+    color:white;
+  }
+  .i-kortinfo #mojtaba{
+    display: block;
+  }
+  
   .kortinfo h2{
     display: block;
     margin-top: 4rem;
@@ -297,9 +360,6 @@ a {
     position: relative;
     top: 9rem;
   }
-  /* .kortinfo{
-    padding-top: 20rem;
-  } */
   #mojtaba{
     display: none;
   }
@@ -438,6 +498,36 @@ footer{
   }
   .pop-inner h2{
     color: white;
+  }
+
+  .i-kortinfo h2{
+    display: block;
+    font-size: 0.6rem;
+    min-width: 13rem;
+    position: relative;
+    top: 10rem;
+    left: 1rem;
+    color:white;
+  }
+  .i-hemlogo {
+    width: 7vh;
+    height: auto;
+    position: relative;
+    top:4rem;
+    left:4rem;
+  }
+  .i-kortinfo p{
+    display: block;
+    font-size: 0.7rem;
+    position: relative;
+    top: 7rem;
+    left: 4rem;
+    color:white;
+  }
+
+  .nameintro{
+    position: relative;
+    width: 50%;
   }
 }
 
