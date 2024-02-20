@@ -192,6 +192,7 @@ a {
   color: white;
   padding-top: 9rem;
   line-height: 1.7rem;
+  max-width: 30%;
 }
 
 .container {
