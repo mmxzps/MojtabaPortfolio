@@ -187,9 +187,9 @@ a {
 }
 
 .aboutmeinfo {
-  max-width: 45%;
+  max-width: 35%;
   display:flow-root;
-  padding: 5rem;
+  padding: 2rem;
   margin: 2rem;
   text-align: center;
   color: white;
