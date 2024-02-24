@@ -35,7 +35,9 @@ header {
   background-color: black;
   height: 11vh;
 }
-
+#active{
+  text-shadow: 1px 1px 2px rgb(13, 178, 243), 0 0 1em rgb(9, 230, 182), 0 0 0.2em rgb(230, 230, 235);
+}
 
 .profilepic {
   padding-top: 12rem;
