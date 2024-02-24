@@ -1,13 +1,12 @@
 
-const para = document.getElementById("collab")
-para.addEventListener('click', ()=>{
-  alert('Lets collaborte!')
-})
 
-const moj = document.getElementById("mojtaba")
-moj.addEventListener('click', ()=>{
-  alert('Lets collaborte!')
-})
+const moj = document.getElementById("collab");
+if (moj !== null) {
+  moj.addEventListener('click', () => {
+    alert('Lets collaborate!');
+  });
+}
+
 
 const jsConfetti = new JSConfetti()
 let pressKey = '';
