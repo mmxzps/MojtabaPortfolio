@@ -4,15 +4,15 @@ if (moj !== null) {
     const modal = document.getElementById("myModal");
     const span = document.getElementsByClassName("close")[0];
 
-    // Visa modalfönstret när "collab" klickas på
+    // show modalpopup
     modal.style.display = "block";
 
-    // Stäng modalfönstret när användaren klickar på stäng-knappen
+    // close modalpopup with 'X'
     span.addEventListener('click', function() {
       modal.style.display = "none";
     });
 
-    // Stäng modalfönstret när användaren klickar utanför det
+    // closing modalpopup window even when clicking outside the window
     window.addEventListener('click', function(event) {
       if (event.target == modal) {
         modal.style.display = "none";
@@ -29,11 +29,12 @@ window.addEventListener('keypress', (e)=> {
   pressKey += e.key;
   pressKey = pressKey.slice(-5);
   if(pressKey ==='magic'){
-
+    //first confetti
     jsConfetti.addConfetti({
       confettiRadius: 2,
       confettiNumber: 1500
     })
+    //second confetti
     .then(()=> jsConfetti.addConfetti({
       confettiColors: [
         '#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7',

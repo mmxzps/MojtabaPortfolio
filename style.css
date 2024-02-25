@@ -294,14 +294,14 @@ a {
   transform: scale(1.2);
 }
 
-/*-------------------------------Education TIMELINE*/
+/*------------------------------- TIMELINE*/
 .edutimeline {
   position: relative;
   max-width: 80%;
   margin-top: 10rem;
 }
 
-/*hållaren av text-box och reseten*/
+/*container of text-box*/
 .educontainer {
   padding: 2% 15%;
   position: relative;
@@ -310,7 +310,8 @@ a {
   opacity: 0;
   z-index: 2;
 }
-/*animeringen på hur boxen visas*/
+/*animation how the box shows*/
+/*at 0% it'll start at -30px, makes opacity to 1 and finishline is at 0px*/
 @keyframes movedown {
   0% {
     opacity: 1;
@@ -322,7 +323,9 @@ a {
     transform: translateY(0px);
   }
 }
-/*lagt en delay så att varje box visas efter linjeAnimation*/
+/*added a delay for each box animation
+when moved and be displayed at differnet time
+this way they appear when line reaches them*/
 .educontainer:nth-child(2){
   animation-delay: 1s;
 }
@@ -338,7 +341,7 @@ a {
 .educontainer:nth-child(6){
   animation-delay: 5s;
 }
-/*designen av boxen som är under texten*/
+
 .text-box {
   padding: 1% 1%;
   background: rgb(212 212 212 / 24%);
@@ -349,17 +352,17 @@ a {
   left:-2%;
 }
 
-/*placeringen av vänster boxen*/
+/*alinement the pic for left-box*/
 .left-container {
   left: 4%;
 }
 
-/*placeringen av höger boxen*/
+/*alinement for right-box*/
 .right-container {
   left: 130.2%;
 }
 
-/*placeringen+justering av bilden för vänster-boxen*/
+/*alinement+adjusting the pic for left-box*/
 .educontainer .edupic {
   position: absolute;
   width: 5vh;
@@ -369,12 +372,12 @@ a {
   z-index: 10;
 }
 
-/*placeringen av bilden för höger-boxen*/
+/*alinement the pic for right-box*/
 .right-container .edupic {
   left: -1.5rem;
 }
 
-/*timeline linjen*/
+/*timeline line*/
 .edutimeline::after {
   content: "";
   position: absolute;
@@ -387,7 +390,8 @@ a {
   z-index: 1;
   animation: moveline 6s linear forwards;
 }
-/*animeringen på hur linjen visas*/
+/*animation how the line will shows*/
+/*at 0% it'll start at 0% height and finishline it'll be 100% tall*/
 @keyframes moveline {
   0% {
     height: 0;
@@ -398,7 +402,7 @@ a {
   }
 }
 
-/*rubriken i boxen*/
+/*h2 in the box*/
 .text-box h2 {
   font-weight: 600;
 }
@@ -408,7 +412,7 @@ a {
   margin-bottom: 1rem;
 }
 
-/*"pilen" som sticker ut från boxen*/
+/*"arrow" that points out from the box*/
 .left-container-arrow {
   height: 0;
   width: 0;
@@ -421,7 +425,7 @@ a {
   right: -15px;
 }
 
-/*"pilen" som sticker ut från boxen*/
+/*"arrow" that points out from the box*/
 .right-container-arrow {
   height: 0;
   width: 0;
@@ -447,7 +451,7 @@ a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Styla innehållet i modalfönstret */
+/* inner-modal */
 .modal-content {
   background-color: rgba(0, 0, 0, 0.829);
   margin: 15% auto;
@@ -457,7 +461,7 @@ a {
   box-shadow: 2px 2px 7px darkgray;
 }
 
-/* Styla stäng-knappen */
+/* X-button */
 .close {
   color: white;
   float: right;
@@ -484,7 +488,7 @@ a {
   padding-bottom: 6rem;
   padding-top: 2rem;
 }
-/*kontakt rutorna ska stå rätt*/
+/*making the input boxes align porperly*/
 .contact-left{
   display: flex;
   flex-direction: column;
@@ -492,7 +496,7 @@ a {
   gap: 10px;
 }
 
-/*kontakt rutan justering*/
+/*designing the input boxes*/
 .contact-input{
   width: 80%;
   height: 50px;
@@ -503,12 +507,13 @@ a {
   color: #aaaaaa;
   border-radius: 50px;
 }
-/*message rutan får egen justering*/
+/*extra adjustment for textarea*/
 .contact-input textarea{
   height: 140px;
   padding-top: 15px;
   border-radius: 20px;
 }
+/*highlight input box when you click in it*/
 .contact-input:focus{
   box-shadow: 1px 1px 9px rgb(33, 238, 6);
 }
@@ -818,10 +823,8 @@ footer{
     position: relative;
     width: 50%;
   }
-}
 
-
-@media screen and (max-width: 600px) {
+  /*----------------------------------For timeline*/
   .edutimeline{
     margin-top: 50px;
     left: 15%; 
@@ -868,5 +871,4 @@ footer{
   .left-container-arrow,  .right-container-arrow {
     display: none;
   }
-
 }
